@@ -1,0 +1,20 @@
+{
+  "files": {
+    "src/email.css": [
+      {
+        "id": "45e3d712-f88a-402b-bd35-e6866faff9e8",
+        "line": 1,
+        "version": 28,
+        "index": 0
+      }
+    ],
+    "src/index.jsx": [
+      {
+        "id": "93d37d59-765d-4a7a-9832-2ad2ce404e07",
+        "line": 12,
+        "version": 42,
+        "index": 252
+      }
+    ]
+  }
+}
