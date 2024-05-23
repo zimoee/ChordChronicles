@@ -1,5 +1,5 @@
 import React from 'react'
-// import EmailForm from './email.jsx'
+import EmailForm from './email.jsx'
 
 function Notifications(){
   return(
@@ -10,7 +10,7 @@ function Notifications(){
       <p>
         To get automatic daily notifications with a customizable reminder message to practice, email your email and desired message below! 
       </p>
-      {/* <EmailForm/> */}
+      <EmailForm/>
     </div>
   )
 }

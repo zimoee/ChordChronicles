@@ -1,0 +1,35 @@
+.addTodo {
+  background-color: #3e4790;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.addTodo:hover {
+  background-color: #5c6bc0;
+}
+
+.deleteTodo {
+  background-color: #3e4790;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.deleteTodo:hover {
+  background-color: #5c6bc0;
+}
+
+
+li{
+  list-style: none;
+  margin-top: 10px;
+}

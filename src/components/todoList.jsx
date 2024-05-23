@@ -1,10 +1,18 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import './todoList.css';
 
 
 function TodoList () {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || []);
+  
   const [inputValue, setInputValue] = useState('')
 
+  
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos))
+  }, [todos]);
+
+  
   function handleChange(e){
     setInputValue(e.target.value)
   }
@@ -27,12 +35,12 @@ function TodoList () {
       <h1>Todo List</h1>
       <form>
         <input type='text' value={inputValue} onChange={handleChange}/>
-        <button onClick={handleSubmit}>Add Todo</button>
+        <button className = 'addTodo' onClick={handleSubmit}>Add Todo</button>
       </form>
       <ul>
         {todos.map((todo,index) => (
           <li key={index}>{todo}
-           <button onClick ={() => handleDelete(index)}>Delete</button>
+           <button className = 'deleteTodo' onClick ={() => handleDelete(index)}>Delete</button>
           </li>
         ))}
       </ul>
