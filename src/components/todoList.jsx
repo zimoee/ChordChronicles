@@ -7,7 +7,7 @@ function TodoList () {
   
   const [inputValue, setInputValue] = useState('')
 
-  
+  // Store user todo list items in local storage
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos]);
@@ -29,10 +29,11 @@ function TodoList () {
     newTodos.splice(index, 1);
     setTodos(newTodos);
   };
-  
+
+  // Make form for user to input todo items
   return (
     <div>
-      <h1>Todo List</h1>
+      <h1>Todo List / Practice Goals</h1>
       <form>
         <input type='text' value={inputValue} onChange={handleChange}/>
         <button className = 'addTodo' onClick={handleSubmit}>Add Todo</button>

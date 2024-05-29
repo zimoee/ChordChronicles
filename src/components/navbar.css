@@ -1,13 +1,10 @@
 nav{
   position: fixed;
-  /*overflow: hidden;
-  z-index: 1;
-  height: 60;*/
   bottom: 0;
   width: 100%; 
   background:  #3e4790;
-
 }
+
 
 #navbar{
   display: flex;
@@ -17,12 +14,12 @@ nav{
 
 #navbar li{
   list-style: none;
-  padding: 0 25px;
+  padding: 0 50px;
   position: relative;
 }
 
 @media screen and (max-width: 480px){
   #navbar li{
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }

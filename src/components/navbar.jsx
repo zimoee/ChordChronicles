@@ -4,6 +4,7 @@ import React from 'react'
 
 function Navbar(){
   return(
+    
     <nav>
         <ul id = "navbar">
           <li><NavLink to="/home"><img src="./images/homeicon.png"width="50" height="50"/></NavLink></li>
