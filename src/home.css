@@ -16,6 +16,21 @@ h1, h2 {
   color:  #3e4790;
 }
 
+.userdoc-button{
+  background-color: #3e4790;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.userdoc-button:hover{
+  background-color: #5c6bc0;
+}
+
 main {
   display: flex;
   justify-content: space-around;

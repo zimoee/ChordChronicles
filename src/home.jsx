@@ -9,6 +9,10 @@ function Home(){
         <h3>Streaks: [] continuous days of practice!</h3>
       </header>
 
+      <a href = 'https://docs.google.com/document/d/1YhQfQHkd7DaPHRUmBo0Zgr7NFo4RhPzfCcLVNUz6uHM/edit?usp=sharing'>
+        <button className = 'userdoc-button'>User Documentation</button>
+      </a>
+
       <main>
         <section className = "goals-section">
           <h2>Goals</h2>

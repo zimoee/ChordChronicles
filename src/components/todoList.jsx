@@ -36,12 +36,12 @@ function TodoList () {
       <h1>Todo List / Practice Goals</h1>
       <form>
         <input type='text' value={inputValue} onChange={handleChange}/>
-        <button className = 'addTodo' onClick={handleSubmit}>Add Todo</button>
+        <button className = 'addTodo' onClick={handleSubmit}>Add Todo/Goal</button>
       </form>
       <ul>
         {todos.map((todo,index) => (
           <li key={index}>{todo}
-           <button className = 'deleteTodo' onClick ={() => handleDelete(index)}>Delete</button>
+           <button className = 'deleteTodo' onClick ={() => handleDelete(index)}>Completed</button>
           </li>
         ))}
       </ul>
