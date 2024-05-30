@@ -32,19 +32,19 @@ function EmailForm() {
     return () => clearInterval(interval);
   }, []);
 
-  // // Function to send email to user
-  // const sendEmail = () => {
-  //   emailjs
-  //     .sendForm("service_yekynmh", "template_xbabcda", "#myForm", {
-  //       publicKey: "ljZnFdgpXGVUbkM0v",
-  //     })
-  //     .then((response) => {
-  //       console.log("Email sent!", response);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error sending email:", error);
-  //     });
-  // };
+  // Function to send email to user
+  const sendEmail = () => {
+    emailjs
+      .sendForm("service_yekynmh", "template_xbabcda", "#myForm", {
+        publicKey: "ljZnFdgpXGVUbkM0v",
+      })
+      .then((response) => {
+        console.log("Email sent!", response);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
