@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "soucre": "/(.*)",
+      "destination": "/home.jsx"
+    }
+  ]
+}
