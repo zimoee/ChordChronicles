@@ -24,7 +24,7 @@ function EmailForm() {
       const currentMinute = currentTime.getMinutes();
 
       // Check if current time is scheduled send time
-      if (currentHour === 15 && currentMinute === 52 ) {
+      if (currentHour === 16 && currentMinute === 5 ) {
         sendEmail(); // Call function to send email if time is matched
       }
     }, 30000); // Check every 60000 milliseconds
@@ -35,7 +35,7 @@ function EmailForm() {
   // Function to send email to user
   const sendEmail = () => {
     emailjs
-      .sendForm(process.env.EMAILJS_SERVICE_KEY, process.env.EMAILJS_TEMPLATE_KEY, "#myForm", process.env.EMAILJS_PUBLIC_KEY,
+      .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, "#myForm", process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       )
       .then((response) => {
         console.log("Email sent!", response);
