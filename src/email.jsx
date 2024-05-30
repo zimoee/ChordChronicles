@@ -35,9 +35,8 @@ function EmailForm() {
   // Function to send email to user
   const sendEmail = () => {
     emailjs
-      .sendForm("service_yekynmh", "template_xbabcda", "#myForm", {
-        publicKey: "ljZnFdgpXGVUbkM0v",
-      })
+      .sendForm(process.env.EMAILJS_SERVICE_KEY, process.env.EMAILJS_TEMPLATE_KEY, "#myForm", process.env.EMAILJS_PUBLIC_KEY,
+      )
       .then((response) => {
         console.log("Email sent!", response);
       })
