@@ -131,3 +131,4 @@ dist
 
 # .gitignore
 .env
+.vercel
