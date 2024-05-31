@@ -15,8 +15,12 @@ function Home(){
 
       <main>
         <section className = "goals-section">
-          <h2>Goals</h2>
-          <p>[Enter goals]</p>
+          <h2>Practice tips:</h2>
+          <ul>
+            <li>Divide time into shorter sessions</li>
+            <li>Set a goal</li>
+            <li>Record yourself</li>
+          </ul>
 
         </section>
 
@@ -25,8 +29,13 @@ function Home(){
         </section>
 
         <section className = "practice-section">
-          <h2>Things to practice:</h2>
-          <p>[Enter practice]</p>
+          <h2>Things to focus on:</h2>
+          <ol>
+            <li>Band music</li>
+            <li>Dynamics</li>
+            <li>Tone</li>
+            <li>Scales</li>
+          </ol>
         </section>
       </main>
     </div>
