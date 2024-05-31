@@ -13,7 +13,7 @@
   background-color: #5c6bc0;
 }
 
-.deleteTodo {
+.completeTodo {
   background-color: #3e4790;
   color: white;
   border: none;
@@ -24,7 +24,7 @@
   margin-left: 10px;
 }
 
-.deleteTodo:hover {
+.completeTodo:hover {
   background-color: #5c6bc0;
 }
 

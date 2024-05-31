@@ -24,7 +24,7 @@ function TodoList () {
     setInputValue('')
   }
   
-  const handleDelete = (index) => {
+  const handleComplete = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
@@ -41,7 +41,7 @@ function TodoList () {
       <ul>
         {todos.map((todo,index) => (
           <li key={index}>{todo}
-           <button className = 'deleteTodo' onClick ={() => handleDelete(index)}>Completed</button>
+           <button className = 'completeTodo' onClick ={() => handleComplete(index)}>Completed</button>
           </li>
         ))}
       </ul>
