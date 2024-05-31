@@ -17,13 +17,14 @@ function TodoList () {
     setInputValue(e.target.value)
   }
 
-  
+  // Function to add todo and clear input field when submitted 
   function handleSubmit(e){
     e.preventDefault()
     setTodos([...todos, inputValue])
     setInputValue('')
   }
-  
+
+  // Function to remove todo item from list
   const handleComplete = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
