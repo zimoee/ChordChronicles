@@ -13,13 +13,13 @@ function TodoList () {
   }, [todos]);
 
   
-  function handleChange(e){
-    setInputValue(e.target.value)
+  function handleChange(event){
+    setInputValue(event.target.value)
   }
 
   // Function to add todo and clear input field when submitted 
-  function handleSubmit(e){
-    e.preventDefault()
+  function handleSubmit(event){
+    event.preventDefault()
     setTodos([...todos, inputValue])
     setInputValue('')
   }
